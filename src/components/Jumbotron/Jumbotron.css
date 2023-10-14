@@ -1,0 +1,144 @@
+#jumbotron_name {
+    font-size: 5rem;
+    z-index: 1;
+    font-weight: bold;
+    color: orange;
+}
+
+#container_name {
+    width: 400px;
+}
+
+
+.typed-out_1 {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing_1 1.5s steps(20, end) forwards;
+    animation-delay: 0;
+}
+
+@keyframes typing_1 {
+    0% {
+        width: 0
+    }
+
+    1% {
+        border-right: .15em solid orange;
+    }
+
+    99% {
+        border-right: .15em solid orange;
+    }
+
+    100% {
+        width: 100%;
+        border-right: 0;
+
+    }
+}
+
+.typed-out_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing_2 1.5s steps(20, end) forwards;
+    animation-delay: 2s;
+}
+
+@keyframes typing_2 {
+    0% {
+        width: 0
+    }
+
+    1% {
+        border-right: .15em solid orange;
+    }
+
+    99% {
+        border-right: .15em solid orange;
+    }
+
+    100% {
+        width: 100%;
+        border-right: 0;
+
+    }
+}
+
+.typed-out_3 {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing_3 1.5s steps(20, end) forwards;
+    animation-delay: 4s;
+}
+
+@keyframes typing_3 {
+    0% {
+        width: 0
+    }
+
+    1% {
+        border-right: .15em solid orange;
+    }
+
+    99% {
+        border-right: .15em solid orange;
+    }
+
+    100% {
+        width: 100%;
+        border-right: 0;
+    }
+}
+
+#container_photo {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+}
+
+#jumbotron_photo {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    to {
+        opacity: 1;
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+#jumbotron_photo_background {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+@media screen and (max-width: 992px) {
+    #jumbotron_name {
+        font-size: 3rem;
+    }
+
+    #container_name {
+        width: 240px;
+    }
+}
