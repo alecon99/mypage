@@ -1,0 +1,9 @@
+#contacts_container{
+    margin-top: 100px ;
+    padding-bottom: 100px ;
+}
+
+.contact_link{
+    width: 130px;
+    margin: 10px 10px;
+}

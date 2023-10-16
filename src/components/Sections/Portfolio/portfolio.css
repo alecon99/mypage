@@ -1,0 +1,43 @@
+.img_portfolio {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.link_portfolio {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon_link_porfolio{
+    font-size: 3rem;
+    margin: 5px;
+}
+
+.icon_link_porfolio:hover{
+    color: orange !important;
+}
+
+.card_container {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 220px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+.card_container:hover .img_portfolio {
+
+    opacity: 0.3;
+}
+
+.card_container:hover .link_portfolio {
+    opacity: 1;
+}

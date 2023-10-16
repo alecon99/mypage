@@ -1,5 +1,16 @@
-
 .hover_orange:hover{
-    color: orange;
+    color: orange !important;
     cursor: pointer;
+}
+
+.orange{
+    color: orange;
+}
+
+.logo-small {
+    height: 50px;
+}
+
+.logo_xsmall{
+    height: 20px;
 }
