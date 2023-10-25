@@ -10,6 +10,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 import NewLife from '../../../media/projects/NewLife.png'
 import Weather from '../../../media/projects/Weather.png'
+import MyPage from '../../../media/projects/Mypage.png'
 
 const Portfolio = () => {
     return (
@@ -47,7 +48,7 @@ const Portfolio = () => {
                 </Col>
                 <Col lg={4} md={6}>
                     <div className='card_container'>
-                        <img className='img_portfolio' src="https://dingolab.com/wp-content/uploads/2019/05/Caratteristiche-sito-web-aziendale-efficace.png" alt="" />
+                        <img className='img_portfolio' src={MyPage} alt="" />
                         <div className='link_portfolio d-flex'>
                             <a className='text-white icon_link_porfolio' href="https://github.com/alecon99/mypage">
                                 <FontAwesomeIcon icon={faGithub} />
