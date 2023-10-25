@@ -48,7 +48,9 @@ const Portfolio = () => {
                 <Col lg={4} md={6}>
                     <div className='card_container'>
                         <img className='img_portfolio' src="https://dingolab.com/wp-content/uploads/2019/05/Caratteristiche-sito-web-aziendale-efficace.png" alt="" />
-                        <div className='link_portfolio'>link</div>
+                        <a className='text-white icon_link_porfolio' href="https://github.com/alecon99/mypage">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
                         <div>My page project</div>
                     </div>
                 </Col>
