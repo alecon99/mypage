@@ -1,32 +1,37 @@
-import React from 'react'
+import { useContext } from 'react'
+
+import { ChooseLanguageProvider } from '../../../Context/ChooseLanguageContext';
 
 import './Jumbotron.css'
 
-import photo from '../../../media/photo.png'
-
-import { Col, Row } from 'react-bootstrap'
+import myPhoto from '../../../media/myphoto.png'
 
 const Jumbotron = () => {
+
+    const { language } = useContext(ChooseLanguageProvider);
+
     return (
         <div className='d-flex justify-content-center' >
-            <Row id='jumbotron_container'>
-                <Col id='jumbotron_name' className='d-flex justify-content-center align-items-center me-md-5'>
-                    <div id='container_name' className='text-start'>
-                        <div className='typed-out_1'>{' < Hello'}</div>
-                        <div className='typed-out_2'>I'm Alessio</div>
-                        <div className='typed-out_3'>{'Conte />'}</div>
-                    </div>
-                </Col>
-                <Col className='d-flex justify-content-center align-items-center pt-3 pt-lg-0' >
-                    <div id='container_photo'>
-                        <img id='jumbotron_photo' src={photo} alt="" />
-                        <div id='jumbotron_photo_background'></div>
-                    </div>
-                </Col>
-            </Row>
+            <div id='jumbotron_container' className='text-center'>
+                <div id='jumbotron_name' className='mb-4' >
+                    {language === "EN" ?
+                        <>
+                            <div className='typed-out_1'>
+                                {"< Hello I'm Alessio Conte />"}
+                            </div>
+                        </>
+                        :
+                        <>
+                            <div className='typed-out_1'>
+                                {' < Ciao sono Alessio Conte />'}
+                            </div>
+                        </>
+                    }
+                </div>
+                <img id='my_photo' src={myPhoto} alt="My photo" />
+            </div>
             <a name='about'></a>
         </div>
-
     )
 }
 

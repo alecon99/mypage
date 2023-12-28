@@ -1,0 +1,17 @@
+#slider_container{
+    margin-top: 100px ;
+    margin-bottom: 100px ;
+}
+
+.stack_icon{
+    height: 60px;
+}
+
+.stack_icon_hover{
+    margin: 10px 0;
+}
+
+.stack_icon_hover:hover{
+    transform: scale(1.1);
+}
+

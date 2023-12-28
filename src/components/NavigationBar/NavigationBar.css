@@ -1,0 +1,7 @@
+#language_btn{
+    min-width: 40px;
+}
+
+#language_btn:hover {
+   font-weight: bolder;
+}

@@ -1,0 +1,32 @@
+export const NavigationBarLinks = [
+    {   
+        id:"1",
+        IT:{
+            title:"Informazioni"
+        },
+        EN:{
+            title:"About"
+        },
+        href:"#about"
+    },
+    { 
+        id:"2", 
+        IT:{
+            title:"Portfolio"
+        },
+        EN:{
+            title:"Portfolio"
+        },
+        href:"#portfolio"
+    },
+    { 
+        id:"3",
+        IT:{
+            title:"Contatti"
+        },
+        EN:{
+            title:"Contacts"
+        },        
+        href:"#contacts"
+    }
+]
